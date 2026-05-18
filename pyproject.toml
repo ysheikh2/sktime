@@ -56,9 +56,9 @@ dependencies = [
   "joblib>=1.2.0,<1.6",  # required for parallel processing
   "numpy>=1.21,<2.5",  # required for framework layer and base class logic
   "packaging",  # for estimator specific dependency parsing
-  "pandas<3.0.0,>=1.1",  # pandas is the main in-memory data container
+  "pandas<4,>=1.1",  # pandas is the main in-memory data container
   "scikit-base>=1.0.0,<1.1.0",  # base module for sklearn compatible base API
-  "scikit-learn>=0.24,<1.8.0",  # required for estimators and framework layer
+  "scikit-learn>=0.24,<2.0",  # required for estimators and framework layer
   "scipy<2.0.0,>=1.2",  # required for estimators and framework layer
 ]
 
@@ -78,7 +78,7 @@ dependencies = [
 #
 # users can install via "pip install sktime[all_extras]"
 #
-# * all_extras soft dependencies must be compatible with pandas 2, numpy 2
+# * all_extras soft dependencies must be compatible with pandas 3, numpy 2
 # * estimator specific soft dependencies should be handled
 #   via python_dependencies tag instead, do not add here
 all_extras = [
