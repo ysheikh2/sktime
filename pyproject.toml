@@ -78,7 +78,7 @@ dependencies = [
 #
 # users can install via "pip install sktime[all_extras]"
 #
-# * all_extras soft dependencies must be compatible with pandas 3, numpy 2
+# * all_extras soft dependencies must be compatible with pandas 3, numpy 2/3
 # * estimator specific soft dependencies should be handled
 #   via python_dependencies tag instead, do not add here
 all_extras = [
@@ -233,7 +233,7 @@ mlflow_tests = [
 notebooks = [
   # needed for the blog post notebooks
   "matplotlib",
-  "numpy<2",
+  "numpy<3",
   "scipy<1.16",
   "pmdarima",
   "seaborn",
